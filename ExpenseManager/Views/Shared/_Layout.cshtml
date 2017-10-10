@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Expense Tracker</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/styles.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @*    // @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body >
+    <header>
+
+        <nav class="navbar  navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Expense Tracker</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Expense Tracker</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        @*  <li>@Html.ActionLink("Total", "Total", "Expense")</li>*@
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Friend <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Add", "Create", "Friend")</li>
+                                <li>@Html.ActionLink("View", "Index", "Friend")</li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Expense <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Add", "Create", "Account")</li>
+                                <li>@Html.ActionLink("View", "Index", "Account")</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container body" style="min-height: 400px;">
+        <div class="row">
+            @RenderSection("featured", required: false)
+
+        </div>
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class=" ">
+            <div class="text-center">
+                
+                <p>&copy; @DateTime.Now.Year - Satwinder 200375568 Course name: interactive media design web and Code comp2048</p>
+            </div>
+        </div>
+    </footer>
+
+    @*  @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Friend">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="addres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Accounts" Relationship="DatabaseModel.FK_Accounts_ToFriends" FromRole="Friend" ToRole="Account" />
+  </EntityType>
+  <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Friends" EntityType="Self.Friend" />
+    <EntitySet Name="Accounts" EntityType="DatabaseModel.Account" />
+    <AssociationSet Name="FK_Accounts_ToFriends" Association="DatabaseModel.FK_Accounts_ToFriends">
+      <End Role="Friend" EntitySet="Friends" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="SpentOn" Type="DateTime" Precision="3" />
+    <Property Name="Info" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Friend_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Friend" Relationship="DatabaseModel.FK_Accounts_ToFriends" FromRole="Account" ToRole="Friend" />
+  </EntityType>
+  <Association Name="FK_Accounts_ToFriends">
+    <End Type="DatabaseModel.Friend" Role="Friend" Multiplicity="1" />
+    <End Type="DatabaseModel.Account" Role="Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Friend">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="Friend_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

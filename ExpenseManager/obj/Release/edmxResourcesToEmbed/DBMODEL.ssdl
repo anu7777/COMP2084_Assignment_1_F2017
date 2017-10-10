@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Amount" Type="numeric" Precision="8" Scale="2" />
+    <Property Name="SpentOn" Type="datetime" />
+    <Property Name="Info" Type="varchar" MaxLength="500" />
+    <Property Name="Friend_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="contact" Type="varchar" MaxLength="50" />
+    <Property Name="addres" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Accounts_ToFriends">
+    <End Role="Friends" Type="Self.Friends" Multiplicity="1" />
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Friends">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accounts">
+        <PropertyRef Name="Friend_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Friends" EntityType="Self.Friends" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Accounts_ToFriends" Association="Self.FK_Accounts_ToFriends">
+      <End Role="Friends" EntitySet="Friends" />
+      <End Role="Accounts" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

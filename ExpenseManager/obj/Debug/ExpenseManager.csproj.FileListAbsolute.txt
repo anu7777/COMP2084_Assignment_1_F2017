@@ -1,0 +1,44 @@
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\ExpenseManager.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\ExpenseManager.pdb
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\EntityFramework.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\EntityFramework.SqlServer.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\Microsoft.Web.Infrastructure.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Helpers.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Mvc.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Razor.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Deployment.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Razor.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\EntityFramework.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\EntityFramework.SqlServer.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Razor.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Deployment.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Razor.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Helpers.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\bin\System.Web.Mvc.xml
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.csprojResolveAssemblyReference.cache
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.dll
+c:\users\gill\documents\visual studio 2012\Projects\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.pdb
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\ExpenseManager.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\ExpenseManager.pdb
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\EntityFramework.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\EntityFramework.SqlServer.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Helpers.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Mvc.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Razor.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Razor.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\EntityFramework.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\EntityFramework.SqlServer.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Razor.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Webpages.Razor.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Helpers.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\bin\System.Web.Mvc.xml
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.csprojResolveAssemblyReference.cache
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.dll
+C:\Users\Gill\Desktop\ExpenseManager\ExpenseManager\obj\Debug\ExpenseManager.pdb
